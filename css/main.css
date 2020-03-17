@@ -1,1 +1,208 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:'Open Sans', sans-serif}#main{width:990px;margin:0 auto}input[type="text"],input[type="password"]{border:1px solid #000;padding:5px;margin:10px 5px 10px 5px;width:180px}input[type="submit"]{border:1px solid #000;border-radius:0;background-color:#fafafa;margin:10px 5px 10px 5px;cursor:pointer}label{margin-left:5px}.passwordField{width:300px;float:left}.passwordFeedback{width:250px;float:left}.feedback{margin:10px 5px 10px 5px;font-size:11px;font-weight:600}.feedback.error{color:#d9534f}.feedback.warning{color:#f0ad4e}.feedback.success{color:#5cb85c}.strengthIndicator{margin:10px 5px 10px 5px;width:200px;padding:5px;height:13px;border:1px solid #d3d3d3}.strengthIndicator::before{content:"";display:block;height:100%;-moz-transition-property:width;-o-transition-property:width;-webkit-transition-property:width;transition-property:width;-moz-transition-delay:0;-o-transition-delay:0;-webkit-transition-delay:0;transition-delay:0;-moz-transition-duration:250ms;-o-transition-duration:250ms;-webkit-transition-duration:250ms;transition-duration:250ms;-moz-transition-timing-function:linear;-o-transition-timing-function:linear;-webkit-transition-timing-function:linear;transition-timing-function:linear}.passwordWrapper::after{content:"";display:block;clear:both;float:none}.error .strengthIndicator::before{width:10%;background-color:#d9534f}.warning .strengthIndicator::before{width:60%;background-color:#f0ad4e}.success .strengthIndicator::before{width:100%;background-color:#5cb85c}.feedback.error,.feedback.warning,.feedback.success{display:none}.error .feedback.error{display:block}.warning .feedback.warning{display:block}.success .feedback.success{display:block}
+/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../scss/main.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* dies ist ein kommentar */
+/* line 18, ../scss/main.scss */
+#main {
+  width: 990px;
+  margin: 0 auto;
+}
+
+/* line 24, ../scss/main.scss */
+input[type="text"], input[type="password"] {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
+  width: 180px;
+}
+
+/* line 32, ../scss/main.scss */
+input[type="submit"] {
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #fafafa;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+/* line 40, ../scss/main.scss */
+label {
+  margin-left: 5px;
+}
+
+/* line 44, ../scss/main.scss */
+.passwordField {
+  width: 300px;
+  float: left;
+}
+
+/* line 49, ../scss/main.scss */
+.passwordFeedback {
+  width: 250px;
+  float: left;
+}
+
+/* line 54, ../scss/main.scss */
+.feedback {
+  margin: 10px 5px 10px 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+/* line 59, ../scss/main.scss */
+.feedback.error {
+  color: #d9534f;
+}
+/* line 63, ../scss/main.scss */
+.feedback.warning {
+  color: #f0ad4e;
+}
+/* line 67, ../scss/main.scss */
+.feedback.success {
+  color: #5cb85c;
+}
+
+/* line 72, ../scss/main.scss */
+.strengthIndicator {
+  margin: 10px 5px 10px 5px;
+  width: 200px;
+  padding: 5px;
+  height: 13px;
+  border: 1px solid #d3d3d3;
+}
+/* line 79, ../scss/main.scss */
+.strengthIndicator::before {
+  content: "";
+  display: block;
+  height: 100%;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 91, ../scss/main.scss */
+#passwordWrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 99, ../scss/main.scss */
+.error .strengthIndicator::before {
+  width: 10%;
+  background-color: #d9534f;
+}
+
+/* line 106, ../scss/main.scss */
+.warning .strengthIndicator::before {
+  width: 60%;
+  background-color: #f0ad4e;
+}
+
+/* line 113, ../scss/main.scss */
+.success .strengthIndicator::before {
+  width: 100%;
+  background-color: #5cb85c;
+}
+
+/* line 119, ../scss/main.scss */
+.feedback.error, .feedback.warning, .feedback.success {
+  display: none;
+}
+
+/* line 123, ../scss/main.scss */
+.error .feedback.error {
+  display: block;
+}
+
+/* line 127, ../scss/main.scss */
+.warning .feedback.warning {
+  display: block;
+}
+
+/* line 131, ../scss/main.scss */
+.success .feedback.success {
+  display: block;
+}

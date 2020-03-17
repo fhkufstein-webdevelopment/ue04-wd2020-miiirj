@@ -22,18 +22,19 @@ function PasswordChecker(wrapperId, passwordInputFieldId, passwordSubmitButtonId
     //if we are in the password field an enter text - JavaScript Method "onkeyup" or "onkeup" - again in our case the field this.passwordField
     //if we try to click the submit button - JavaScript Method "onclick" - in our case this.passwordSubmitButton
 
-    this.passwordField.onblur = function() {
+    var check = function() { that.check(); }
         //the keyword "this" is always referring to its context.
         //onblur is an event which happens in "passwordField" -> so the keyword "this" would refer to the passwordField NOT to our class
         //therefore we previously saved "this" in a variable called "that"
-        that.check();
-    };
 
+    this.passwordField.onblur = check;
+    
     //TODO implement the other events in the exact same way!
+    this.passwordField.onfocus = check;
 
+    this.passwordField.onkeyup = check;
 
-
-
+    this.passwordSubmitButton = check;
     //TODO end
 
     this.check = function() {
@@ -71,7 +72,11 @@ function PasswordChecker(wrapperId, passwordInputFieldId, passwordSubmitButtonId
     this.checkForLength = function() {
         //@todo
         //have a look at javascript string methods and properties
-        return true; //this needs to be replaced!
+        if(this.passwordField.value.length >= this.minLength) {
+            return true;
+        } else {
+            return false;
+        }
     };
 
     /*
@@ -81,7 +86,12 @@ function PasswordChecker(wrapperId, passwordInputFieldId, passwordSubmitButtonId
         //@todo
         //have a look at javascript string methods and properties
         //you could probably "match" it somehow
-        return true; //this needs to be replaced!
+        if(this.passwordField.value.match("[!§$_.:,;]") == null) {
+            return false;
+        } else {
+            return true;
+        }
+
     };
 }
 
